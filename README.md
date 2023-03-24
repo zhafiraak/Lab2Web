@@ -195,7 +195,6 @@ lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung umur berdasa
 tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai pilihan pekerjaan.
 - Masukan kode berikut.
 
-```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -206,7 +205,7 @@ tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai piliha
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Tugas PHP Dasar</h1>
+    <h1>Praktikum PHP Dasar</h1>
     <form action="" method="post" class="container">
       <div class="form-control">
         <label for="nama">Nama</label>
@@ -220,11 +219,11 @@ tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai piliha
         <label for="nama">Pekerjaan</label>
         <select name="pekerjaan" required>
           <option value="">- Pilih Pekerjaan -</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Data Scientist">Data Scientist</option>
-          <option value="DevOps">DevOps</option>
-          <option value="Mobile Application Developer">
-            Mobile Application Developer
+          <option value="Guru">Guru</option>
+          <option value="Dokter">Dokter</option>
+          <option value="PNS">PNS</option>
+          <option value="Apoteker">
+            Apoteker
           </option>
         </select>
       </div>
@@ -248,20 +247,20 @@ tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai piliha
         $gaji = "";
 
         switch ($pekerjaan) {
-            case 'Mobile Application Developer' :
-                $gaji = "36 Juta";
+            case 'Dokter' :
+                $gaji = "15 juta";
                 break;
 
-            case 'Data Scientist':
-                $gaji = "19 Juta";
+            case 'Guru':
+                $gaji = "3 Juta";
                 break;
 
-            case 'Web Developer':
-                $gaji = "25 Juta";
+            case 'PNS':
+                $gaji = "5 Juta";
                 break;
 
-            case 'DevOps':
-                $gaji = "35 Juta";
+            case 'Apoteker':
+                $gaji = "4 Juta";
                 break;
 
             default :
@@ -318,7 +317,6 @@ tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai piliha
     ?>
   </body>
 </html>
-```
 
 - Kemudian buat file `style.css` didalam folder yang sama agar mudah diakses
 - Lalu, masukan kode berikut.
